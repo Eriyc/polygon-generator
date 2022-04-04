@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css"
+      integrity="sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB"
+      crossorigin="anonymous"
+    />
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="canvas"></canvas>
+      <section aria-labelledby="label" id="controls">
+        <h1 id="label">Kontroller</h1>
+        <div class="input-contanier">
+          <label id="corner-label"
+            >Antal hörn: <span id="corners">5</span></label
+          >
+          <input
+            aria-labelledby="corner-label"
+            id="cornerInput"
+            value="5"
+            type="range"
+            min="2"
+            max="16"
+          />
+          <section class="flex justify-between">
+            <span>2</span>
+            <span>16</span>
+          </section>
+        </div>
+        <div class="input-contanier">
+          <label id="skip-label"
+            >Steglängd: <span id="skip-label-value">1</span></label
+          >
+          <input
+            aria-labelledby="skip-label"
+            id="skipInput"
+            value="1"
+            type="range"
+            min="1"
+            max="8"
+          />
+          <section class="flex justify-between">
+            <span>1</span>
+            <span id="skip-max">8</span>
+          </section>
+        </div>
+        <h1>Matten</h1>
+        <span id="formula"></span>
+        <span id="angle"></span>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

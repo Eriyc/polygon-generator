@@ -1,0 +1,32 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+#controls {
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.input-contanier {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+#canvas {
+  width: 300px;
+  height: 300px;
+}
