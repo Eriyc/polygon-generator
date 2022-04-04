@@ -16,7 +16,6 @@ export const getNotationTex = (
     console.log("not prime");
   }
 
-  const n = parseInt((p / q).toFixed(0));
   const html = katex.renderToString(`n\\{p/q\\}=${figures}\\{${p}/${q}\\}`);
   return html;
 };

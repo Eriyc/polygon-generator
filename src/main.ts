@@ -1,7 +1,6 @@
 import { Polygon } from "./polygon";
 import "./style.css";
 
-const app = document.querySelector<HTMLDivElement>("#app")!;
 const ctx = document
   .querySelector<HTMLCanvasElement>("#canvas")!
   .getContext("2d")!;
